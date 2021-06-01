@@ -13,9 +13,9 @@
 		140C65B326606E0F00B1D17A /* Pessoas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 140C65B126606E0F00B1D17A /* Pessoas.xcdatamodeld */; };
 		140C65B526606E1100B1D17A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140C65B426606E1100B1D17A /* Assets.xcassets */; };
 		140C65B826606E1100B1D17A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140C65B626606E1100B1D17A /* LaunchScreen.storyboard */; };
-		140C65C226606E2500B1D17A /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C65C026606E2500B1D17A /* FormViewController.swift */; };
-		140C65C626606E4C00B1D17A /* PessoaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C65C526606E4C00B1D17A /* PessoaDAO.swift */; };
-		140C65C926606FF700B1D17A /* ListarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C65C826606FF700B1D17A /* ListarTableViewController.swift */; };
+		1472482D2666B1A600EDC410 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472482B2666B1A600EDC410 /* FormViewController.swift */; };
+		1472482E2666B1A600EDC410 /* ListarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472482C2666B1A600EDC410 /* ListarTableViewController.swift */; };
+		147248302666B20B00EDC410 /* PessoaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472482F2666B20B00EDC410 /* PessoaDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		140C65B426606E1100B1D17A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140C65B726606E1100B1D17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		140C65B926606E1100B1D17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		140C65C026606E2500B1D17A /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		140C65C526606E4C00B1D17A /* PessoaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PessoaDAO.swift; path = ../../../backup/Pessoas/Pessoas/model/PessoaDAO.swift; sourceTree = "<group>"; };
-		140C65C826606FF700B1D17A /* ListarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarTableViewController.swift; sourceTree = "<group>"; };
+		1472482B2666B1A600EDC410 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		1472482C2666B1A600EDC410 /* ListarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarTableViewController.swift; sourceTree = "<group>"; };
+		1472482F2666B20B00EDC410 /* PessoaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PessoaDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 		140C65A726606E0F00B1D17A /* Pessoas */ = {
 			isa = PBXGroup;
 			children = (
+				1472482A2666B16500EDC410 /* controller */,
 				140C65C726606EF500B1D17A /* view */,
 				140C65C426606E3C00B1D17A /* model */,
-				140C65BF26606E2500B1D17A /* controller */,
 				140C65A826606E0F00B1D17A /* AppDelegate.swift */,
 				140C65AA26606E0F00B1D17A /* SceneDelegate.swift */,
 				140C65B426606E1100B1D17A /* Assets.xcassets */,
@@ -73,20 +73,10 @@
 			path = Pessoas;
 			sourceTree = "<group>";
 		};
-		140C65BF26606E2500B1D17A /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				140C65C026606E2500B1D17A /* FormViewController.swift */,
-				140C65C826606FF700B1D17A /* ListarTableViewController.swift */,
-			);
-			name = controller;
-			path = ../../backup/Pessoas/Pessoas/controller;
-			sourceTree = "<group>";
-		};
 		140C65C426606E3C00B1D17A /* model */ = {
 			isa = PBXGroup;
 			children = (
-				140C65C526606E4C00B1D17A /* PessoaDAO.swift */,
+				1472482F2666B20B00EDC410 /* PessoaDAO.swift */,
 				140C65B126606E0F00B1D17A /* Pessoas.xcdatamodeld */,
 			);
 			path = model;
@@ -99,6 +89,15 @@
 				140C65AE26606E0F00B1D17A /* Main.storyboard */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		1472482A2666B16500EDC410 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1472482B2666B1A600EDC410 /* FormViewController.swift */,
+				1472482C2666B1A600EDC410 /* ListarTableViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				140C65A926606E0F00B1D17A /* AppDelegate.swift in Sources */,
-				140C65C626606E4C00B1D17A /* PessoaDAO.swift in Sources */,
+				147248302666B20B00EDC410 /* PessoaDAO.swift in Sources */,
+				1472482E2666B1A600EDC410 /* ListarTableViewController.swift in Sources */,
 				140C65B326606E0F00B1D17A /* Pessoas.xcdatamodeld in Sources */,
-				140C65C226606E2500B1D17A /* FormViewController.swift in Sources */,
-				140C65C926606FF700B1D17A /* ListarTableViewController.swift in Sources */,
+				1472482D2666B1A600EDC410 /* FormViewController.swift in Sources */,
 				140C65AB26606E0F00B1D17A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
